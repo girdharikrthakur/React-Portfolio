@@ -1,17 +1,23 @@
 import Header from "./Components/Header";
-import CardList from "./Components/CardList";
+import Skills from "./Components/Skills";
 import Footer from "./Components/Footer";
 import Popup from "./Components/Popup";
-import Hero from "./Components/Hero"
+import Hero from "./Components/Hero";
+import Projects from "./Components/Projects"
+import Contact from "./Components/Contact"
 
 function App() {
   return (
     <>
-      <Header />
+<div className="bg-grey-900">
+        <Header />
       <Hero />
-      <CardList />
+      <Skills />
+      <Projects />
+      <Contact />
       <Footer />
       <Popup />
+</div>
     </>
   );
 }

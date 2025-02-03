@@ -6,17 +6,19 @@ const Main = () => {
     { title: "Card 1", description: "This is the description for Card 1." },
     { title: "Card 2", description: "This is the description for Card 2." },
     { title: "Card 3", description: "This is the description for Card 3." },
-    { title: "Card 4", description: "This is the description for Card 4." },
-    { title: "Card 5", description: "This is the description for Card 4." },
-    { title: "Card 6", description: "This is the description for Card 5." },
   ];
 
   return (
-    <main className=" h-max p-4 flex flex-wrap justify-center bg-gray-100">
+<div>
+<h1 className="text-center text-2xl font-bold text-red-700">Projects</h1>
+
+      <main className=" h-max p-4 flex flex-wrap justify-center">
       {cardsData.map((card, index) => (
         <Card key={index} title={card.title} description={card.description} />
       ))}
     </main>
+</div>
+
   );
 };
 

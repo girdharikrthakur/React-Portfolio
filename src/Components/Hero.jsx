@@ -3,7 +3,7 @@ import dp from "../assets/dp.jpg";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
+    <div className="flex flex-col items-center justify-center h-screen">
       {/* Profile Image */}
       <div>
         <img

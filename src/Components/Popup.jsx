@@ -16,7 +16,7 @@ const Popup = () => {
   return (
     <>
       {isVisible && (
-        <div className="fixed inset-0 bg-gray-600 bg-opacity-90 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-gray-100 bg-opacity-10 flex items-center justify-center z-50">
 
           <div className="bg-white p-6 rounded-lg shadow-lg text-center">
 
