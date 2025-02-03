@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <div className="flex justify-center items-center min-h-[500px] bg-gray-100">
-      <form className="bg-white-200 p-8 rounded-lg shadow-lg min-w-[400px] mt-30">
+      <form className="bg-white-200 p-8 rounded-lg shadow-lg min-w-[400px] mt-30" name="contact" netlify>
         <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">Contact Us</h2>
 
         <div className="mb-4">
