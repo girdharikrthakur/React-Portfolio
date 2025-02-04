@@ -10,7 +10,7 @@ const Main = () => {
 
   return (
 <div>
-<h1 className="text-center text-2xl font-bold text-red-700">Projects</h1>
+<h1 className="text-center text-2xl font-bold text-red-700 dark:text-white">Projects</h1>
 
       <main className=" h-max p-4 flex flex-wrap justify-center">
       {cardsData.map((card, index) => (

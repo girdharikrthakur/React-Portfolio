@@ -53,18 +53,18 @@ const Header = () => {
       {isMenuOpen && (
         <div className="lg:hidden mt-4">
           <nav className="flex flex-col space-y-2">
-            <a href="#home" className="block py-2 px-4 font-semibold text-white bg-red-800 rounded-md">
+            <a href="#home" className="block py-2 px-4 font-semibold text-white bg-gray-700 rounded-md">
               Home
             </a>
             <a
               href="#projects"
-              className="block py-2 px-4 font-semibold bg-red-800 rounded-md text-white"
+              className="block py-2 px-4 font-semibold bg-gray-700 rounded-md text-white"
             >
               Projects
             </a>
             <a
               href="#contact"
-              className="block py-2 px-4 font-semibold text-white bg-red-800 rounded-md"
+              className="block py-2 px-4 font-semibold text-white bg-gray-700 rounded-md"
             >
               Contact
             </a>
