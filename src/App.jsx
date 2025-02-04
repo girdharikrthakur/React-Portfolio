@@ -9,8 +9,8 @@ import Contact from "./Components/Contact"
 function App() {
   return (
     <>
-<div className="bg-grey-900">
-        <Header />
+<div className="bg-gradient-to-r from-red-500 via-pink-700 to-purple-800">
+      <Header />
       <Hero />
       <Skills />
       <Projects />

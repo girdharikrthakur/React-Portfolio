@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 w-full left-0 bg-red-800 text-white p-4 shadow-md">
+    <header className="z-10 fixed top-0 w-full left-0 bg-gray-800 text-white p-4 shadow">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <h1 className="text-2xl font-bold">&lt; Girdhari /&gt;</h1>
