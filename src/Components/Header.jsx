@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <header className="z-10 fixed top-0 w-full left-0 bg-gray-800 text-white p-4 shadow">
+    <header className="z-10 fixed top-0 w-full left-0 bg-[#171717] text-white p-5 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <h1 className="text-2xl font-bold">&lt; Girdhari /&gt;</h1>
@@ -36,7 +36,7 @@ const Header = () => {
         </button>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex space-x-8 text-white">
+        <nav className="hidden lg:flex space-x-4 text-white">
           <a href="#home" className=" font-semibold text-white hover:underline">
             Home
           </a>
@@ -52,7 +52,7 @@ const Header = () => {
       {/* Mobile Navigation (Dropdown) */}
       {isMenuOpen && (
         <div className="lg:hidden mt-4">
-          <nav className="flex flex-col space-y-2">
+          <nav className="flex flex-col space-y-4">
             <a href="#home" className="block py-2 px-4 font-semibold text-white bg-gray-700 rounded-md">
               Home
             </a>

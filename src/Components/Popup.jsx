@@ -15,7 +15,7 @@ const Popup = () => {
   return (
     <>
       {isVisible && (
-        <div className="fixed inset-0 bg-gray-900 bg-opacity-10 backdrop-blur-md flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-[#171717] bg-opacity-10 backdrop-blur-md flex items-center justify-center z-50">
           <motion.div
             initial={{ y: -50, opacity: 0 }} // Start position (above and invisible)
             animate={{ y: 0, opacity: 1 }}   // Drop and fade in

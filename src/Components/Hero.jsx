@@ -1,11 +1,11 @@
 import React from "react";
 import dp from "../assets/dp.jpg";
-import git from "../assets/github .svg"
-import linkedin from "../assets/linkedin .svg"
+import git from "../assets/github.svg"
+import linkedin from "../assets/linkedin.svg"
 
 const Hero = () => {
   return (
-    <div className="z-0 relative flex flex-col items-center justify-center h-full p-4">
+    <div className="z-0 relative flex flex-col items-center justify-center h-full p-4 dark:bg-[#171717] bg-opacity-50">
       {/* Profile Image */}
       <div>
         <img
@@ -18,11 +18,18 @@ const Hero = () => {
       {/* Text Section */}
       <div className="max-w-[800px] text-center mt-4 dark:text-white">
         <h1 className="mt-4 text-4xl font-bold text-red-600">Hey There</h1>
-        <h2 className="mt-4 text-3xl font-bold text-blue-400">Im Girdhari Thakur</h2>
-<div className="flex flex-row justify-center align-centert mt-4 gap-4 ">
-  <a href="https://github.com/girdharikrthakur"><img className="w-12 h-12 rounded-full bg-white hover:scale-110 transition duration-300 ease-in-out" src={git} alt="" /></a>
+        <h2 className="mt-4 text-3xl font-bold text-blue-400">I'm Girdhari Thakur</h2>
+      <div className="flex flex-row justify-center align-centert mt-4 gap-4 ">
+
+  <a href="https://github.com/girdharikrthakur"><img className="w-12 h-12 rounded-full dark:bg-white hover:scale-110 transition duration-300 ease-in-outk" src={git} alt="" /></a>
   
-<a href="https://www.linkedin.com/in/girdharikrthakur"><img className="w-12 h-12 rounded-full bg-white hover:scale-110 transition duration-300 ease-in-out" src={linkedin} alt="" /></a>
+  <a href="https://www.linkedin.com/in/girdharikrthakur"><img className="w-12 h-12 rounded-full dark:bg-white hover:scale-110 transition duration-300 ease-in-out" src={linkedin} alt="" /></a>
+
+</div>
+<div className="bg-orange ">
+  <a href="./assets/cv.pdf">
+<button className="w-[120px] p-2 mt-4 bg-orange-700 text-white rounded-lg hover:bg-green-600 ">Download CV</button>
+</a>
 </div>
         <p className="mt-8 p-4 text-lg ">
           I am a passionate Java Full Stack Developer with hands-on experience
