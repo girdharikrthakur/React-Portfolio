@@ -76,7 +76,7 @@ function App() {
       />
 
       {/* Content Wrapper with Background Gradient */}
-      <div className="relative z-10 dark:bg-gradient-to-r from-gray-800 via-gray-900 to-black  min-h-screen bg-gray-200 ">
+      <div className="relative z-10 dark:bg-gradient-to-r from-gray-800 via-gray-900 to-black  min-h-screen bg-gray-100 ">
         <Header />
         <Hero />
         <Skills />
