@@ -2,9 +2,10 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className=" hidden flex flex-col md:flex-row w-screen h-screen">
+    <div className="overflow-hidden flex flex-col md:flex-row mt-16">
+      <div className="h-[50px] bg-red-700"></div>
       {/* Form Section */}
-      <div className="w-full md:w-1/2 h-full flex items-center justify-center p-6">
+      <div className="w-full md:w-1/2 h-full flex items-center justify-center">
         <form
           name="contact"
           netlify
@@ -64,7 +65,7 @@ const Contact = () => {
 
       {/* Right Section */}
       <div className="w-full md:w-1/2 h-64 md:h-full flex items-center justify-center">
-        <p className="text-white text-lg">Other Details</p>
+        <p className="dark:text-white text-black text-lg">Other Details</p>
       </div>
     </div>
   );
