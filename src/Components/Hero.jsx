@@ -1,9 +1,12 @@
-import React from "react";
 import dp from "../assets/dp.jpg";
 import git from "../assets/github.svg"
 import linkedin from "../assets/linkedin.svg"
+import cv from "../assets/cv.pdf"
+
 
 const Hero = () => {
+
+  
   return (
     <div className="z-0 relative flex flex-col items-center justify-center h-full p-4 dark:bg-[#171717] bg-opacity-50">
       {/* Profile Image */}
@@ -26,8 +29,8 @@ const Hero = () => {
   <a href="https://www.linkedin.com/in/girdharikrthakur"><img className="w-12 h-12 rounded-full dark:bg-white hover:scale-110 transition duration-300 ease-in-out" src={linkedin} alt="" /></a>
 
 </div>
-<div className="bg-orange ">
-  <a href="./assets/cv.pdf">
+<div className="bg-orange cursor-pointer  ">
+  <a href={cv}>
 <button className="w-[120px] p-2 mt-4 bg-orange-700 text-white rounded-lg hover:bg-green-600 ">Download CV</button>
 </a>
 </div>
