@@ -1,6 +1,5 @@
 
 const Footer = () => {
-  const react="(React.js)";
 
   return (
     
@@ -10,8 +9,7 @@ const Footer = () => {
       </div>
 
       <div className="flex gap-4">
-        <a className="text-red-600 hover:text-green-500" href="">IDN</a>
-        <a className="text-white hover:text-green-500" href="">Portfolio  {react}</a>
+        <a className="text-red-600 hover:text-green-500" href="">IDN Defense</a>
       </div>
     </footer>
   );
