@@ -6,9 +6,19 @@ import cv from "../assets/cv.pdf"
 
 const Hero = () => {
 
+  const about_me= `I am a passionate Java Full Stack Developer with hands-on experience
+          in building dynamic web applications. Skilled in Java, Spring Boot,
+          Hibernate, and SQL Plus for backend development, and proficient in
+          front-end technologies like HTML, CSS, JavaScript, and React.js. I
+          specialize in developing scalable applica00tions, RESTful APIs, and
+          seamless database integration. With expertise in version control
+          using Git and GitHub, I enjoy crafting efficient, user-friendly
+          solutions. I am eager to collaborate, learn, and contribute to
+          impactful projects in software development.`
+
   
   return (
-    <div className="z-0 relative flex flex-col items-center justify-center h-full p-4 dark:bg-[#171717] bg-opacity-50">
+    <div className="z-0 relative flex flex-col items-center justify-center h-full p-4">
       {/* Profile Image */}
       <div>
         <img
@@ -35,15 +45,7 @@ const Hero = () => {
 </a>
 </div>
         <p className="mt-8 p-4 text-lg ">
-          I am a passionate Java Full Stack Developer with hands-on experience
-          in building dynamic web applications. Skilled in Java, Spring Boot,
-          Hibernate, and SQL Plus for backend development, and proficient in
-          front-end technologies like HTML, CSS, JavaScript, and React.js. I
-          specialize in developing scalable applica00tions, RESTful APIs, and
-          seamless database integration. With expertise in version control
-          using Git and GitHub, I enjoy crafting efficient, user-friendly
-          solutions. I am eager to collaborate, learn, and contribute to
-          impactful projects in software development.
+          {about_me}
         </p>
       </div>
     </div>

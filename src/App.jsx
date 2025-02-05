@@ -1,3 +1,6 @@
+import { useState, useEffect, useCallback } from "react";
+import Particles from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim";
 import Header from "./Components/Header";
 import Skills from "./Components/Skills";
 import Footer from "./Components/Footer";
@@ -5,78 +8,80 @@ import Popup from "./Components/Popup";
 import Hero from "./Components/Hero";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
-import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles-slim";
 
 function App() {
+  const [particleColor, setParticleColor] = useState("#ffffff"); // Default: White for dark mode
+
+  // Function to detect system dark mode
+  const detectDarkMode = () => {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  };
+
+  // Update particle color based on theme change
+  useEffect(() => {
+    const updateTheme = () => {
+      setParticleColor(detectDarkMode() ? "#ffffff" : "#a0a0a0"); // Light gray in light mode
+    };
+
+    updateTheme(); // Set initial color
+
+    // Listen for system theme changes
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    mediaQuery.addEventListener("change", updateTheme);
+
+    return () => {
+      mediaQuery.removeEventListener("change", updateTheme);
+    };
+  }, []);
+
+  // Initialize particles
+  const particlesInit = useCallback(async (engine) => {
+    await loadSlim(engine);
+  }, []);
+
   return (
     <div className="static w-full min-h-screen">
-      {/* Particles Background */}
-      <Particles
-        id="tsparticles"
-        init={loadSlim}
-        options={{
-          background: {
-            color: "transparent",
-          },
-          particles: {
-            number: {
-              value: 70, // Number of particles
-              density: {
+      <div className="relative z-10 dark:bg-[#313131] bg-gray-100 min-h-screen ">
+        
+        {/* Particles Wrapper */}
+        <Particles
+          id="tsparticles"
+          init={particlesInit}
+          options={{
+            fullScreen: { enable: true, zIndex: -1 }, // Keeps particles in the background
+            particles: {
+              number: {
+                value: 100,
+                density: { enable: true, area: 800 },
+              },
+              color: { value: particleColor }, // Dynamic color
+              shape: { type: "circle" },
+              opacity: { value: 0.4 },
+              size: { value: 4, random: true },
+              links: {
                 enable: true,
-                value_area: 800, // Spread area
+                distance: 150,
+                color: particleColor, // Dynamic link color
+                opacity: 0.4,
+                width: 1,
               },
-            },
-            color: {
-              value: "#ffffff", // White particles
-            },
-            shape: {
-              type: "circle",
-            },
-            opacity: {
-              value: 0.7,
-              random: true,
-            },
-            size: {
-              value: 4,
-              random: true,
-            },
-            move: {
-              enable: true,
-              speed: 2,
-              direction: "none",
-              random: false,
-              straight: false,
-              outModes: "out",
-            },
-          },
-          interactivity: {
-            events: {
-              onHover: {
+              move: {
                 enable: true,
-                mode: "repulse",
-              },
-              onClick: {
-                enable: true,
-                mode: "push",
+                speed: 0.5,
               },
             },
-            modes: {
-              repulse: {
-                distance: 100,
-                duration: 0.4,
-              },
-              push: {
-                quantity: 4,
+            interactivity: {
+              events: {
+                onHover: { enable: false, mode: "repulse" },
+                onClick: { enable: true, mode: "push" },
               },
             },
-          },
-        }}
-        className="absolute inset-0 w-full h-full z-1"
-      />
+            retina_detect: true,
+          }}
+          className="absolute inset-0 w-full h-full"
+        />
 
-      {/* Content Wrapper with Background Gradient */}
-      <div className="relative z-10 dark:bg-[#313131] bg-gray-100 min-h-screen bg-opacity-10">
+        {/* Main Components */}
         <Header />
         <Hero />
         <Skills />
@@ -84,6 +89,7 @@ function App() {
         <Contact />
         <Footer />
         <Popup />
+
       </div>
     </div>
   );
