@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div className="static w-full min-h-screen">
-      <div className="relative z-10 dark:bg-[#313131] bg-gray-100 min-h-screen ">
+      <div className="relative z-10 dark:bg-[#313131] bg-gray-100 min-h-screen p-4">
         
         {/* Particles Wrapper */}
         <Particles
