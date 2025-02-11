@@ -1,7 +1,7 @@
 
 const Contact = () => {
   return (
-    <div className="overflow-hidden flex flex-col md:flex-row mt-16 z-2">
+    <div className="overflow-hidden flex flex-col md:flex-row mt-16 z-20">
       <div className="h-[50px]"></div>
       {/* Form Section */}
       <div className="w-full md:w-1/2 h-full flex items-center justify-center">
