@@ -9,7 +9,7 @@ const Footer = () => {
       </div>
 
       <div className="flex gap-4">
-        <a className="text-red-600 hover:text-green-500" href="">IDN Defense</a>
+        <a className="text-red-600 hover:text-green-500" href="https://indiadefencenews.in/">IDN Defense</a>
       </div>
     </footer>
   );
