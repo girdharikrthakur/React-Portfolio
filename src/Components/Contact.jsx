@@ -1,13 +1,13 @@
 
 const Contact = () => {
   return (
-    <div className="overflow-hidden flex flex-col md:flex-row mt-16 z-20">
+    <div className="p-6 overflow-hidden flex flex-col md:flex-row mt-16 z-20">
       <div className="h-[50px]"></div>
       {/* Form Section */}
       <div className="w-full md:w-1/2 h-full flex items-center justify-center">
         <form
           name="contact"
-          className="p-8 shadow bg-white shadow-gray-300 dark:shadow-gray-900 rounded-lg w-full max-w-md dark:bg-[#171717] z-1"
+          className="p-8 shadow bg-white shadow-gray-300 dark:shadow-gray-900 rounded-lg w-full max-w-md dark:bg-[#171717] z-10"
         >
           <h2 className="text-3xl font-bold text-center mb-6 text-gray-800 dark:text-white">
             Contact Us
