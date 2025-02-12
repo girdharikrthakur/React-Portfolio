@@ -30,13 +30,13 @@ const Hero = () => {
 
       {/* Text Section */}
       <div className="max-w-[800px] text-center mt-4 dark:text-white">
-        <h1 className="mt-4 text-4xl font-bold text-red-600">Hey There</h1>
-        <h2 className="mt-4 text-3xl font-bold text-blue-400">I'm Girdhari Thakur</h2>
+        <h1 className="mt-4 text-4xl text-red-600 font-extrabold">Hey There</h1>
+        <h2 className="mt-4 text-3xl text-blue-400 font-extrabold">I&apos;m Girdhari Thakur</h2>
       <div className="flex flex-row justify-center align-centert mt-4 gap-4 ">
 
-  <a href="https://github.com/girdharikrthakur"><img className="w-12 h-12 rounded-full dark:bg-white hover:scale-110 transition duration-300 ease-in-outk" src={git} alt="" /></a>
+  <a href="https://github.com/girdharikrthakur"><img className="w-12 h-12 rounded-full dark:bg-white hover:scale-110 transition duration-300 ease-in-outk" src={git} alt="git link" /></a>
   
-  <a href="https://www.linkedin.com/in/girdharikrthakur"><img className="w-12 h-12 rounded-full dark:bg-white hover:scale-110 transition duration-300 ease-in-out" src={linkedin} alt="" /></a>
+  <a href="https://www.linkedin.com/in/girdharikrthakur"><img className="w-12 h-12 rounded-full dark:bg-white hover:scale-110 transition duration-300 ease-in-out" src={linkedin} alt="linkedin link" /></a>
 
 </div>
 <div className="bg-orange cursor-pointer  ">

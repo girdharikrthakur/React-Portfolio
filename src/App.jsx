@@ -73,7 +73,7 @@ function App() {
             interactivity: {
               events: {
                 onHover: { enable: false, mode: "repulse" },
-                onClick: { enable: true, mode: "push" },
+                onClick: { enable: false, mode: "push" },
               },
             },
             retina_detect: true,
