@@ -29,7 +29,7 @@ const Hero = () => {
       </div>
 
       {/* Text Section */}
-      <div className="max-w-[800px] text-center mt-4 dark:text-white">
+      <div className="max-w-[1000px] text-center mt-4 dark:text-white">
         <h1 className="mt-4 text-4xl text-red-600 font-extrabold">Hey There</h1>
         <h2 className="mt-4 text-3xl text-blue-400 font-extrabold">I&apos;m Girdhari Thakur</h2>
       <div className="flex flex-row justify-center align-centert mt-4 gap-4 ">
@@ -44,7 +44,7 @@ const Hero = () => {
 <button className="w-[120px] p-2 mt-4 bg-orange-700 text-white rounded-lg hover:bg-green-600 ">Download CV</button>
 </a>
 </div>
-        <p className="mt-8 p-4 text-lg ">
+        <p className="mt-8 p-4 text-lg font-normal">
           {about_me}
         </p>
       </div>
