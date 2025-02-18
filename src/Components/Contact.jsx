@@ -6,6 +6,8 @@ const Contact = () => {
       {/* Form Section */}
       <div className="w-full md:w-1/2 h-full flex items-center justify-center">
         <form
+        method="post"
+        data-netlify="true" 
           name="contact"
           className="p-8 shadow bg-white shadow-gray-300 dark:shadow-gray-900 rounded-lg w-full max-w-md dark:bg-[#171717] z-10"
         >
