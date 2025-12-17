@@ -8,8 +8,6 @@ import Popup from "./Components/Popup";
 import Hero from "./Components/Hero";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
-import TestComponent from "./Components/TestComponent";
-import Links from "./Components/Links";
 
 function App() {
   const [particleColor, setParticleColor] = useState("#ffffff"); // Default: White for dark mode
@@ -89,8 +87,6 @@ function App() {
         <Skills />
         <Projects />
         <Contact />
-        <TestComponent />
-        <Links />
         <Footer />
         <Popup />
 
